@@ -7,6 +7,7 @@ We will follow most technologies companies use in their project.
 ## Common commands
 - ./vendor/bin/sail up -d
 - ./vendor/bin/sail down
+- ./vendor/bin/sail shell
 - docker ps
 - docker exec -it CONTAINER_ID /bin/bash
 

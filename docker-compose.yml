@@ -22,8 +22,8 @@ services:
         networks:
             - sail
         depends_on:
-            - mysql8
-    mysql8:
+            - mysql
+    mysql:
         image: 'mysql/mysql-server:8.0.32'
         ports:
             - '${FORWARD_DB_PORT:-3307}:3306'
