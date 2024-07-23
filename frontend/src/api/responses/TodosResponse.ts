@@ -1,4 +1,4 @@
-import {Todo} from "../../models/todo.ts";
+import { Todo } from "../../models/Todo.ts";
 
 export interface TodoResponse {
     status: string;
