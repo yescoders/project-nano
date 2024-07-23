@@ -1,18 +1,20 @@
 <script setup lang="ts">
-import TodoList from './components/TodoList.vue';
+import { RouterLink, RouterView } from "vue-router";
 
 </script>
 
 <template>
-    <div class="p-6 bg-blue-500 text-white my-class">
-        Hello, Tailwind with SCSS!
+    <h1 class="bg-amber-400">Monir</h1>
+    <nav class="bg-amber-400">
+        <RouterLink to="/" class="px-8">Home</RouterLink>
+        <RouterLink to="/login" class="p-1">Login page</RouterLink>
+        <RouterLink to="/register" class="p-1">Register page</RouterLink>
+        <RouterLink to="/dashboard" class="p-1">Dashboard</RouterLink>
+    </nav>
+    <div>
+        <RouterView />
     </div>
-  <TodoList />
 </template>
 
 <style scoped lang="scss">
-.my-class {
-    @apply text-center; // Using Tailwind utilities in SCSS
-    color: red;
-}
 </style>
