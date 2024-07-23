@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
+import TodoList from './components/TodoList.vue'
+
+
 </script>
 
 <template>
@@ -13,6 +16,7 @@ import HelloWorld from './components/HelloWorld.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+  <TodoList />
 </template>
 
 <style scoped>
