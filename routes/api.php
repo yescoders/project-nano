@@ -15,9 +15,12 @@ Route::controller(AuthController::class)->group(function () {
 })->middleware('auth:api');
 
 Route::controller(TodoController::class)->group(function () {
-    Route::get('todos', 'index');
     Route::post('todo', 'store');
-    Route::get('todo/{id}', 'show');
     Route::put('todo/{id}', 'update');
     Route::delete('todo/{id}', 'destroy');
 })->middleware('auth:api');
+
+Route::controller(TodoController::class)->group(function () {
+    Route::get('todos', 'index');
+    Route::get('todo/{id}', 'show');
+});
