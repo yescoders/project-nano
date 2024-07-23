@@ -6,7 +6,11 @@ import TodoList from './components/TodoList.vue'
 </script>
 
 <template>
-  <h1>Hello world</h1>
+    <div class="p-6 bg-blue-500 text-white my-class">
+        Hello, Tailwind with SCSS!
+    </div>
+
+    <h1>Hello world</h1>
   <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
@@ -19,7 +23,11 @@ import TodoList from './components/TodoList.vue'
   <TodoList />
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+.my-class {
+    @apply text-center; // Using Tailwind utilities in SCSS
+    color: red;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
